@@ -16,6 +16,7 @@ const SYMBOL_CHAR_CODES = arrayFromLowtoHigh(33, 47).concat(arrayFromLowtoHigh(5
 // Form
 const form = document.getElementById('passwordGeneratorForm')
 
+// Menyamakan nilai input range dengan input number
 characterAmountNumber.addEventListener('input', syncCharacterAmount);
 characterAmountRange.addEventListener('input', syncCharacterAmount);
 
