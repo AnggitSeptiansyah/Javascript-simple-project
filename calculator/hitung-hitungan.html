@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hitung Hitungan</title>
+</head>
+
+<body>
+	<form>
+		<tr>
+			<td>
+				<label>Bakso</label>
+				<input type="text" value="" id="bakso" onKeyUp="hitung()" />
+				<input type="text" value="10000" name="hargabakso" id="hargabakso" readonly>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Mie Ayam</label>
+				<input type="text" value="" id="mie_ayam" onKeyUp="hitung()" />
+				<input type="text" value="12000" name="mie_ayam" id="harga_mie" readonly>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Total Harga</label>
+				<input type="text"  name="totalharga" id="totalharga">
+			</td>
+		</tr>
+	</form>
+	
+	<script>
+		function hitung(){
+			var bakso = Number(document.getElementById('bakso').value);
+			var hargabakso = Number(document.getElementById('hargabakso').value);
+			
+			var mie_ayam = Number(document.getElementById('mie_ayam').value);
+			var harga_mie = Number(document.getElementById('harga_mie').value);
+			
+			var total = (bakso * hargabakso) + (mie_ayam * harga_mie);
+			document.getElementById('totalharga').value = total;
+		}
+	</script>
+</body>
+
+</html>

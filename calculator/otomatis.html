@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Otomatis</title>
+</head>
+
+<body>
+	<form id="formD" name="formD" action="" method="post" enctype="multipart/form-data">
+	 
+	 Harga Satuan:
+	 <br>
+	 <input type="text" name="harga" onkeyup="OnChange(this.value)" onKeyPress="return isNumberKey(event)" class="harga_satuan">
+	 <br>
+	 Jumlah :
+	 <br>
+	 <input type="text" name="jmlpsn" onkeyup="OnChange(this.value)" onKeyPress="return isNumberKey(event)" class="jumlah">
+	 <br>
+	 Harga keseluruhan :
+	 <br>
+	 <input type="text" name="txtDisplay" value="" readonly="readonly" class="harga">
+	</form>
+	
+	<script type="text/javascript" language="Javascript">
+	 var total= '';
+	 
+	 function OnChange(value){
+	 hargasatuan = document.formD.harga.value;
+	 jumlah = document.formD.jmlpsn.value;
+	 total = hargasatuan * jumlah;
+	 document.formD.txtDisplay.value = total;
+	 }
+	 </script>
+
+</body>
+</html>
