@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.warna {
+    background-color: rgb(56, 56, 56);
+}
+
+.h1{
+    color: #fff;
+}
+
+.kotak{
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.merah{
+    background-color: red;
+}
+
+.hijau{
+    background-color: green;
+}
+
+.biru{
+    background-color: lightblue;
+}
